@@ -21,6 +21,10 @@ GObj="*res://GObj.gd"
 Helper="*res://Helper.gd"
 Con="*res://Constants.gd"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 "Drag camera"={
