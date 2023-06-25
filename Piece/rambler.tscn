@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dydnekjy575k5"]
+
+[ext_resource type="Texture2D" uid="uid://ckwwcus7lq6tq" path="res://Art/rambler.png" id="1_iqpru"]
+[ext_resource type="Script" path="res://Piece/Rambler.gd" id="2_s6vay"]
+
+[node name="rambler" type="Sprite2D"]
+texture = ExtResource("1_iqpru")
+centered = false
+script = ExtResource("2_s6vay")

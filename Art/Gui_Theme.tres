@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c5g3ph7cnoaf1"]
+
+[ext_resource type="FontFile" uid="uid://cn8nqt8kcv3ks" path="res://Art/Fancytext-0Wqd.ttf" id="1_xl0xy"]
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/h_separation = 0
+Button/constants/outline_size = 40
+Button/font_sizes/font_size = 100
+Button/fonts/font = ExtResource("1_xl0xy")

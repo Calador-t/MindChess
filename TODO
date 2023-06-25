@@ -1,0 +1,5 @@
+Make Only one Piece Move
+	- If a piece can move always take it
+		- calc max distance that can be && make batter calc dessicion
+
+Implement cards with adv and dissadvantages	

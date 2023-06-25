@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://de0d1hypc4u7q"]
+
+[ext_resource type="Texture2D" uid="uid://c8g36h1uh1p5c" path="res://Art/Knight.png" id="1_th6p3"]
+[ext_resource type="Script" path="res://Piece/Knight.gd" id="2_jibnh"]
+
+[node name="knight" type="Sprite2D"]
+texture = ExtResource("1_th6p3")
+centered = false
+script = ExtResource("2_jibnh")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 29.0
+offset_right = 89.0
+offset_bottom = 55.0
+text = "Knight"

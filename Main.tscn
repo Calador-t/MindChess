@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://dc2hom5q2umu5"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_0gnbu"]
+[ext_resource type="Theme" uid="uid://c5g3ph7cnoaf1" path="res://Art/Gui_Theme.tres" id="2_p4lbg"]
+
+[node name="Main" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_0gnbu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(100, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 50
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 100
+
+[node name="Play" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_p4lbg")
+text = "Play"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Close" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_p4lbg")
+text = "Close Game"
+
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/Play" to="." method="_on_play_button_down"]
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/Close" to="." method="_on_close_button_down"]
